@@ -24,7 +24,7 @@
 $(call inherit-product, $(COMMON_PATH)/common.mk)
 
 # Vendor blobs
-ifneq ($(wildcard vendor/xiaomi/monet/proprietary/),)
+ifneq ($(wildcard vendor/xiaomi/vangogh/proprietary/),)
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/xiaomi/monet/proprietary/,$(TARGET_COPY_OUT_RECOVERY)/root/)
+    $(call find-copy-subdir-files,*,vendor/xiaomi/vangogh/proprietary/,$(TARGET_COPY_OUT_RECOVERY)/root/)
 endif
