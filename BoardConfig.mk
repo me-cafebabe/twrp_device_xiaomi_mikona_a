@@ -22,6 +22,16 @@
 # Inherit from OEM SoC-common
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
+# A/B
+AB_OTA_PARTITIONS += recovery
+
+# Kernel
+BOARD_INCLUDE_RECOVERY_DTBO := true
+
+# Partition info
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
+
 # Prebuilts
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
