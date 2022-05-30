@@ -21,6 +21,7 @@
 #
 
 # A/B
+PRODUCT_VIRTUAL_AB_OTA := true
 TARGET_IS_VAB := true
 
 # Inherit from OEM SOC-common
